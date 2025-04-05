@@ -18,7 +18,7 @@ def get_file_size(file_name: str) -> int:
     return size
 
 
-def send_file(filename: str, address: (str, int)):
+def send_file(filename: str, address: (str | int)):
     # get the file size in bytes
     file_size = get_file_size(file_name)
 
